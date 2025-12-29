@@ -17,7 +17,8 @@ formats = {
     "gb": (f"{drive}:\\VGBC\\roms", f"{drive}:\\VGBC\\GUI", f"{drive}:\\VGBC\\GUI\\VGBC.csv"),
     "gbc": (f"{drive}:\\VGBC\\roms", f"{drive}:\\VGBC\\GUI", f"{drive}:\\VGBC\\GUI\\VGBC.csv"),
     "gba": (f"{drive}:\\VGBA\\roms", f"{drive}:\\VGBA\\GUI", f"{drive}:\\VGBA\\GUI\\VGBA.csv"),
-    "iso": (f"{drive}:\\VPSP\\roms", f"{drive}:\\VPSP\\GUI", f"{drive}:\\VPSP\\GUI\\VPSP.csv")
+    "iso": (f"{drive}:\\VPSP\\roms", f"{drive}:\\VPSP\\GUI", f"{drive}:\\VPSP\\GUI\\VPSP.csv"),
+    "sfc": (f"{drive}:\\VSFC\\roms", f"{drive}:\\VSFC\\GUI", f"{drive}:\\VSFC\\GUI\\VSFC.csv")
 }
 
 # Define the desired image size
@@ -56,3 +57,4 @@ for i, file_name in enumerate(os.listdir("roms")):
         print(f"done with {file_name.split('.')[0]} {i} out of {items}")
 
 print("Files and images downloaded, sorted, and CSV file updated successfully!")
+
